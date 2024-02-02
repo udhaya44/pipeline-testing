@@ -17,3 +17,5 @@ jobs:
               run: actions/checkout@v4
             - name: Install Dependencies
               run: npm ci
+            - name: Test Code
+              run: npm run test
