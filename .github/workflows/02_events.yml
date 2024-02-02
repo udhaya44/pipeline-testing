@@ -13,3 +13,7 @@ jobs:
               run: echo "Hello world!!!!!"
             - name: output of a event data
               run: echo  "${{ toJson(github.event)}}"
+            - name: Get Code
+              run: actions/checkout@v4
+            - name: Install Dependencies
+              run: npm ci
